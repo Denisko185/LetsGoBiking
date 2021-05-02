@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProxyService", "WebProxyService\WebProxyService.csproj", "{431D6411-A9A8-46BD-AC6F-F45F0B96BA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.csproj", "{27973E73-3916-475F-A1E5-2FFF4F182E16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{431D6411-A9A8-46BD-AC6F-F45F0B96BA64} = {431D6411-A9A8-46BD-AC6F-F45F0B96BA64}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeavyClient", "HeavyClient\HeavyClient.csproj", "{67D66DE5-CEC6-49C5-BCAD-09B0A7136644}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27973E73-3916-475F-A1E5-2FFF4F182E16} = {27973E73-3916-475F-A1E5-2FFF4F182E16}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingHost", "RoutingHost\RoutingHost.csproj", "{6CF782E0-7EA0-4D4F-BA14-A744DCBBA8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProxyServiceHost", "WebProxyServiceHost\WebProxyServiceHost.csproj", "{1ACC421A-1E3E-4731-A355-40BF27146F9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{431D6411-A9A8-46BD-AC6F-F45F0B96BA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431D6411-A9A8-46BD-AC6F-F45F0B96BA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431D6411-A9A8-46BD-AC6F-F45F0B96BA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431D6411-A9A8-46BD-AC6F-F45F0B96BA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27973E73-3916-475F-A1E5-2FFF4F182E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27973E73-3916-475F-A1E5-2FFF4F182E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27973E73-3916-475F-A1E5-2FFF4F182E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27973E73-3916-475F-A1E5-2FFF4F182E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D66DE5-CEC6-49C5-BCAD-09B0A7136644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D66DE5-CEC6-49C5-BCAD-09B0A7136644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D66DE5-CEC6-49C5-BCAD-09B0A7136644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D66DE5-CEC6-49C5-BCAD-09B0A7136644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF782E0-7EA0-4D4F-BA14-A744DCBBA8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF782E0-7EA0-4D4F-BA14-A744DCBBA8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF782E0-7EA0-4D4F-BA14-A744DCBBA8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF782E0-7EA0-4D4F-BA14-A744DCBBA8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACC421A-1E3E-4731-A355-40BF27146F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACC421A-1E3E-4731-A355-40BF27146F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACC421A-1E3E-4731-A355-40BF27146F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACC421A-1E3E-4731-A355-40BF27146F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C43E5D38-9911-4978-9507-6429B164F4C0}
+	EndGlobalSection
+EndGlobal
